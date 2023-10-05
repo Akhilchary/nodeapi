@@ -7,7 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>student data</h1>
+    <h1>Ugly student form</h1>
+    <div class="container">
+        <h1>Add Student</h1>
+        <form action="http://localhost:3000/api/addStudent" method="post">
+            <label for="StudentId">Student ID:</label>
+            <input type="number" value="" name="StudentId" id="StudentId" required>
+
+            <label for="StudentName">Student Name:</label>
+            <input type="text" value="" name="StudentName" id="StudentName" required>
+
+            <label for="CollegeName">College Name:</label>
+            <input type="text" value="" name="CollegeName" id="CollegeName" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 <script src="index.js"></script>
 </html>
