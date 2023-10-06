@@ -10,6 +10,9 @@
     <h1>Ugly student form</h1>
     <div class="container">
         <h1>Add Student</h1>
+<!-- The `action` attribute in the `<form>` tag specifies the URL where the form data will be submitted
+to when the form is submitted. In this case, the form data will be sent to
+`http://localhost:3000/api/addStudent` using the HTTP POST method. -->
         <form action="http://localhost:3000/api/addStudent" method="post">
             <label for="StudentId">Student ID:</label>
             <input type="number" value="" name="StudentId" id="StudentId" required>
