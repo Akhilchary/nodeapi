@@ -14,7 +14,6 @@ const Student = require("../model/student.model");
  * setting the status code, sending data, and setting headers.
  */
 const addStudent = async (req, res) => {
-  console.log(req.body);
   const { StudentId, StudentName, CollegeName } = req.body;
   try {
     const newStudent = new Student({
